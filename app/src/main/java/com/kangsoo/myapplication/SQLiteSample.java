@@ -6,10 +6,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
+import android.util.Log;
 
 public class SQLiteSample extends ActionBarActivity {
 
+    private static final String TAG = "debugMSG";
 
     MyDBHandler db;
     Products product;
@@ -29,6 +30,8 @@ public class SQLiteSample extends ActionBarActivity {
         addButton = (Button) findViewById(R.id.btnAddSQLite);
         deleteButton = (Button) findViewById(R.id.btnDeleteSQLite);
         db = new MyDBHandler(this, "", null, 1);
+
+        Log.i(TAG, "onCreate");
 
         addButton.setOnClickListener(
                 new View.OnClickListener() {
