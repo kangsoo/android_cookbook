@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bound_service">BoundService</string>
+    <string name="title_activity_list_view_sample">ListViewSample</string>
+    <string name="title_activity_sqlite_sample">SQLiteSample</string>
+</resources>
