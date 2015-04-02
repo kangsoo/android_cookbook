@@ -6,25 +6,15 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.kangsoo.myapplication.SQLiteSample">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:width="300dp" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Add"
         android:id="@+id/btnAddSQLite"
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginTop="68dp"
-        android:onClick="addButtonClicked" />
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
 
     <Button
         android:layout_width="wrap_content"
@@ -33,16 +23,23 @@
         android:id="@+id/btnDeleteSQLite"
         android:layout_alignTop="@+id/btnAddSQLite"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="deleteButtonClicked" />
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/textView2"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="144dp" />
+        android:text="Insert History"
+        android:id="@+id/tvTextViewSQLite"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEditTextSQLite"
+        android:width="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
