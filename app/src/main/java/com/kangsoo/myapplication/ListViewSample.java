@@ -1,6 +1,7 @@
 package com.kangsoo.myapplication;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -20,7 +21,7 @@ public class ListViewSample extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_sample);
 
-        String[] foods = {"Bacon","Ham","Tuna","Candy","Meatball","Potato"};
+        String[] foods = {"SQLiteSample", "MainActivity", "Tuna", "Candy", "Meatball", "Potato"};
 
         //this is connect text and listview Item
         //ListAdapter myAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, foods);
@@ -30,12 +31,23 @@ public class ListViewSample extends Activity {
         lvListViewSample.setAdapter(myAdapter);
 
         lvListViewSample.setOnItemClickListener(
-                new AdapterView.OnItemClickListener(){
+                new AdapterView.OnItemClickListener() {
 
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                         String food = String.valueOf(parent.getItemAtPosition(position));
                         Toast.makeText(ListViewSample.this, food, Toast.LENGTH_LONG).show();
+
+                        try {
+                            //get class from name String
+                            Class ourClass = Class.forName("com.kangsoo.myapplication." + food.toString());
+                            Intent itActivity = new Intent(ListViewSample.this, ourClass);
+                            startActivity(itActivity);
+
+                        } catch (ClassNotFoundException e) {
+                            e.printStackTrace();
+                        }
 
                     }
                 }

@@ -6,4 +6,8 @@
     <string name="title_activity_bound_service">BoundService</string>
     <string name="title_activity_list_view_sample">ListViewSample</string>
     <string name="title_activity_sqlite_sample">SQLiteSample</string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">Welcome \n My World~</string>
 </resources>

@@ -11,8 +11,7 @@
             android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="com.kangsoo.myapplication.MAINACTIVITY" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -27,14 +26,23 @@
             android:name=".ListViewSample"
             android:label="@string/title_activity_list_view_sample" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="com.kangsoo.myapplication.LISTVIEWSAMPLE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
             android:name=".SQLiteSample"
             android:label="@string/title_activity_sqlite_sample" >
+            <intent-filter>
+                <action android:name="com.kangsoo.myapplication.SQLITESAMPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/FullscreenTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

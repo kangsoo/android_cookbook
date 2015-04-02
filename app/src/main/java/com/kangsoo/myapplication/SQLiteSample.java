@@ -59,7 +59,6 @@ public class SQLiteSample extends ActionBarActivity {
 
     }
 
-
     public String displaySQLite(){
         String dbString = db.databaseToString();
         tvTextView.setText(dbString);
