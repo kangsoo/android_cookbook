@@ -21,7 +21,7 @@ public class ListViewSample extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_sample);
 
-        String[] foods = {"SQLiteSample", "MainActivity", "Tuna", "Candy", "Meatball", "Potato"};
+        String[] foods = {"SQLiteSample", "MainActivity", "LoginActivity", "Candy", "Meatball", "Potato"};
 
         //this is connect text and listview Item
         //ListAdapter myAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, foods);
