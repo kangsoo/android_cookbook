@@ -36,7 +36,7 @@ import java.util.List;
 /**
  * A login screen that offers login via email/password.
  */
-public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
+public class LoginActivity extends Activity implements LoaderCallbacks<Cursor>, OnClickListener {
 
     /**
      * A dummy authentication store containing known user names and passwords.
@@ -94,12 +94,16 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         });
 
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
+/*
+        //Original Logic
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 attemptLogin();
             }
         });
+*/
+        mEmailSignInButton.setOnClickListener(this);
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
@@ -247,6 +251,15 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
     @Override
     public void onLoaderReset(Loader<Cursor> cursorLoader) {
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.email_sign_in_button:
+                attemptLogin();
+                break;
+        }
     }
 
     private interface ProfileQuery {

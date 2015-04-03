@@ -21,7 +21,11 @@ public class ListViewSample extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view_sample);
 
-        String[] foods = {"SQLiteSample", "MainActivity", "LoginActivity", "Candy", "Meatball", "Potato"};
+        // enables the activity icon as a 'home' button. required if "android:targetSdkVersion" > 14
+        //getActionBar().setHomeButtonEnabled(true);
+
+
+        String[] foods = {"SQLiteSample", "MainActivity", "LoginActivity", "CameraActivity", "Meatball", "Potato"};
 
         //this is connect text and listview Item
         //ListAdapter myAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, foods);
