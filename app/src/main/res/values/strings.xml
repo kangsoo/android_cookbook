@@ -23,4 +23,7 @@
     <string name="title_button_forward">앞으로</string>
     <string name="title_button_refresh">새로고침</string>
     <string name="title_button_history">이력조회</string>
+    <string name="title_activity_flipper">FlipperActivity</string>
+    <string name="title_activity_shared_pref">SharedPrefActivity</string>
+    <string name="title_activity_InternalData">파일로저장하기</string>
 </resources>

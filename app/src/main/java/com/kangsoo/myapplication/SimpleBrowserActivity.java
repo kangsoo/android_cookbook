@@ -1,11 +1,14 @@
 package com.kangsoo.myapplication;
 
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -34,7 +37,17 @@ public class SimpleBrowserActivity extends ActionBarActivity implements View.OnC
         btnRefresh.setOnClickListener(this);
 
         wb = (WebView)findViewById(R.id.wbBrowser);
-        wb.loadUrl("http://www.naver.com");
+
+        wb.getSettings().setJavaScriptEnabled(true);
+        wb.getSettings().setLoadWithOverviewMode(true);
+        wb.getSettings().setUseWideViewPort(true);
+
+        wb.setWebViewClient(new ourViewClient());
+        try{
+            wb.loadUrl("http://www.naver.com");
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
 
@@ -66,6 +79,9 @@ public class SimpleBrowserActivity extends ActionBarActivity implements View.OnC
         switch (v.getId()){
             case R.id.btnGo:
                 wb.loadUrl(etUrl.getText().toString());
+                //keyboard Hide
+                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.hideSoftInputFromWindow(etUrl.getWindowToken(),0);
                 break;
 
             case R.id.btnGoBack:

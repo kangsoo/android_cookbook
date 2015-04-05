@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -89,6 +89,18 @@
         <activity
             android:name=".SimpleBrowserActivity"
             android:label="@string/title_activity_simple_browser" >
+        </activity>
+        <activity
+            android:name=".FlipperActivity"
+            android:label="@string/title_activity_flipper" >
+        </activity>
+        <activity
+            android:name=".SharedPrefActivity"
+            android:label="@string/title_activity_shared_pref" >
+        </activity>
+        <activity
+            android:name=".InternalDataFileStream"
+            android:label="@string/title_activity_InternalData" >
         </activity>
     </application>
 

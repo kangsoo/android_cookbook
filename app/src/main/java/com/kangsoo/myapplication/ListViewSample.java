@@ -13,8 +13,11 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import android.os.Handler;
 
 public class ListViewSample extends Activity {
+
+    boolean exitConfirmation = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +30,8 @@ public class ListViewSample extends Activity {
 
         String[] foods = {"SQLiteSample", "MainActivity", "LoginActivity",
                 "CameraActivity", "GFXSurfaceView", "SoundStuff",
-                "SlidingActivity", "TabsActivity", "SimpleBrowserActivity"};
+                "SlidingActivity", "TabsActivity", "SimpleBrowserActivity",
+                "FlipperActivity", "SharedPrefActivity", "InternalDataFileStream"};
 
         //this is connect text and listview Item
         //ListAdapter myAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, foods);
@@ -58,5 +62,24 @@ public class ListViewSample extends Activity {
                     }
                 }
         );
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (exitConfirmation) {
+            super.onBackPressed();
+            return;
+        }
+
+        this.exitConfirmation = true;
+        Toast.makeText(this, "'뒤로'버튼을 한번더 누르시면 종료됩니다.", Toast.LENGTH_SHORT).show();
+
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                exitConfirmation = false;
+            }
+        }, 2000);
     }
 }
