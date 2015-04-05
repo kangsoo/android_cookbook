@@ -12,4 +12,15 @@
     <string name="dummy_content">Welcome \n My World~</string>
     <string name="display_password_character">비밀번호 표시</string>
     <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_SurfaceView">화면제어</string>
+    <string name="title_activity_SoundStuff">음악을 들어볼까?</string>
+    <string name="title_activity_sliding">SlidingActivity</string>
+    <string name="title_activity_tabs">TabsActivity</string>
+    <string name="title_activity_simple_browser">SimpleBrowserActivity</string>
+    <string name="Go">가자</string>
+    <string name="hint_editText_url">주소를 입력하세요.</string>
+    <string name="title_button_goback">뒤로</string>
+    <string name="title_button_forward">앞으로</string>
+    <string name="title_button_refresh">새로고침</string>
+    <string name="title_button_history">이력조회</string>
 </resources>

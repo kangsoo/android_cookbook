@@ -25,7 +25,9 @@ public class ListViewSample extends Activity {
         //getActionBar().setHomeButtonEnabled(true);
 
 
-        String[] foods = {"SQLiteSample", "MainActivity", "LoginActivity", "CameraActivity", "Meatball", "Potato"};
+        String[] foods = {"SQLiteSample", "MainActivity", "LoginActivity",
+                "CameraActivity", "GFXSurfaceView", "SoundStuff",
+                "SlidingActivity", "TabsActivity", "SimpleBrowserActivity"};
 
         //this is connect text and listview Item
         //ListAdapter myAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, foods);

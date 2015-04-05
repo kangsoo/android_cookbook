@@ -6,8 +6,9 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -65,9 +66,29 @@
             android:windowSoftInputMode="adjustResize|stateVisible" >
         </activity>
         <activity
-            android:screenOrientation="portrait"
             android:name=".CameraActivity"
-            android:label="@string/title_activity_camera" >
+            android:label="@string/title_activity_camera"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GFXSurfaceView"
+            android:label="@string/title_activity_SurfaceView" >
+        </activity>
+        <activity
+            android:name=".SoundStuff"
+            android:label="@string/title_activity_SoundStuff" >
+        </activity>
+        <activity
+            android:name=".SlidingActivity"
+            android:label="@string/title_activity_sliding" >
+        </activity>
+        <activity
+            android:name=".TabsActivity"
+            android:label="@string/title_activity_tabs" >
+        </activity>
+        <activity
+            android:name=".SimpleBrowserActivity"
+            android:label="@string/title_activity_simple_browser" >
         </activity>
     </application>
 
