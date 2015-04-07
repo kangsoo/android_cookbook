@@ -26,4 +26,10 @@
     <string name="title_activity_flipper">FlipperActivity</string>
     <string name="title_activity_shared_pref">SharedPrefActivity</string>
     <string name="title_activity_InternalData">파일로저장하기</string>
+    <string name="title_activity_sensor">SensorActivity</string>
+    <string name="title_activity_http">HttpActivity</string>
+    <string name="title_activity_weather">WeatherActivity</string>
+    <string name="도시명">titile_cicy</string>
+    <string name="title_weather_city">도시명</string>
+    <string name="title_weather_state">시/도 명</string>
 </resources>

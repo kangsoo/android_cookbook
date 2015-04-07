@@ -1,6 +1,7 @@
 package com.kangsoo.myapplication;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -9,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -84,6 +86,13 @@ public class InternalDataFileStream extends Activity implements View.OnClickList
         }
 
         etSaveSharedPref.setText("");
+
+        Dialog d = new Dialog(this);
+        d.setTitle("저장은 잘 됐을까요?");
+        TextView tv = new TextView(this);
+        tv.setText("잘됐찌용~");
+        d.setContentView(tv);
+        d.show();
     }
 
     public class loadFileStream extends AsyncTask<String, Integer, String>{
