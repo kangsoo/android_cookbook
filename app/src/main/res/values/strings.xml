@@ -32,4 +32,7 @@
     <string name="도시명">titile_cicy</string>
     <string name="title_weather_city">도시명</string>
     <string name="title_weather_state">시/도 명</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_GLExample">그림을 그려보자</string>
 </resources>

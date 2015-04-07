@@ -115,6 +115,20 @@
             android:name=".WeatherActivity"
             android:label="@string/title_activity_weather" >
         </activity>
+        <activity
+            android:name=".GLExample"
+            android:label="@string/title_activity_GLExample" >
+        </activity>
+
+        <receiver android:name=".WidgetActivity" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_activity_info" />
+        </receiver>
     </application>
 
 </manifest>

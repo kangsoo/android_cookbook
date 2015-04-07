@@ -32,7 +32,9 @@ public class ListViewSample extends Activity {
                 "CameraActivity", "GFXSurfaceView", "SoundStuff",
                 "SlidingActivity", "TabsActivity", "SimpleBrowserActivity",
                 "FlipperActivity", "SharedPrefActivity", "InternalDataFileStream",
-                "SensorActivity", "HttpActivity", "WeatherActivity"};
+                "SensorActivity", "HttpActivity", "WeatherActivity",
+                "GLExample"
+        };
 
         //this is connect text and listview Item
         //ListAdapter myAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, foods);

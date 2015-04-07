@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin" android:background="#09C">
+
+    <TextView android:id="@+id/tvWidgetResult" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" android:text="@string/appwidget_text"
+        android:textColor="#ffffff" android:textSize="24sp" android:textStyle="bold|italic"
+        android:layout_margin="8dp" android:contentDescription="@string/appwidget_text"
+        android:background="#09C" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Config Button"
+        android:id="@+id/btnWidge" />
+
+    <TextView android:id="@+id/tvTextViewDisplay" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" android:text="@string/appwidget_text"
+        android:textColor="#ffffff" android:textSize="24sp" android:textStyle="bold|italic"
+        android:layout_margin="8dp" android:contentDescription="@string/appwidget_text"
+        android:background="#09C" />
+
+
+</LinearLayout>
